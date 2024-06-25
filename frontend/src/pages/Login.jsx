@@ -14,7 +14,7 @@ function Login() {
             </nav>
             <div className="content">
                 <div className="image-placeholder">
-                    {/* Aquí puedes agregar tu imagen de fondo más tarde */}
+                    {}
                 </div>
                 <div className="login-form">
                     <Form route="/api/token/" method="login" />
