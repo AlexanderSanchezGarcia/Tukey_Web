@@ -12,14 +12,17 @@ function Login() {
                     <li><a href="/join">Join</a></li>
                 </ul>
             </nav>
-            <div className="login-form">
-                <Form route="/api/token/" method="login" />
-            </div>
-            <div className="planet-image">
-                <img src="/path-to-your-planet-image.png" alt="Planet" />
+            <div className="content">
+                <div className="image-placeholder">
+                    {/* Aquí puedes agregar tu imagen de fondo más tarde */}
+                </div>
+                <div className="login-form">
+                    <Form route="/api/token/" method="login" />
+                </div>
             </div>
         </div>
     );
 }
 
 export default Login;
+

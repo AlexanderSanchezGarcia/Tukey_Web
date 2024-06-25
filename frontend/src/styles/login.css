@@ -24,6 +24,27 @@ body {
     text-decoration: none;
 }
 
+.content {
+    display: flex;
+    height: calc(100vh - 64px); /* Ajusta la altura restando la altura del navbar */
+}
+
+.image-placeholder {
+    flex: 1;
+    background-color: #0a0a23;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Agrega tu imagen de fondo aquí más tarde */
+}
+
+.login-form {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .form-container {
     background-color: #1a1a3d;
     padding: 2rem;
@@ -83,3 +104,4 @@ button {
     font-size: 1rem;
     text-align: center;
 }
+
