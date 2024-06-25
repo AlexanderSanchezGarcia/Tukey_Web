@@ -1,75 +1,3 @@
-<<<<<<< HEAD
-/* Container for the whole page */
-div {
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Styles for the notes section */
-  .notes-section {
-    margin-bottom: 2rem;
-  }
-  
-  .notes-section h2 {
-    color: #333;
-    font-size: 24px;
-  }
-  
-  /* Styles for individual notes - assuming your Note component has some container element */
-  .note {
-    background-color: #f9f9f9;
-    border-left: 5px solid #007bff;
-    margin: 10px 0;
-    padding: 10px 15px;
-    border-radius: 5px;
-  }
-  
-  /* Styles for the form section */
-  form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    margin: auto;
-  }
-  
-  form h2 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  form label {
-    font-weight: bold;
-    margin-top: 10px;
-  }
-  
-  form input,
-  form textarea {
-    width: 100%;
-    padding: 8px;
-    margin: 8px 0 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  form input[type="submit"] {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  form input[type="submit"]:hover {
-    background-color: #0056b3;
-  }
-=======
-/* Home.css */
-
 body {
   background-color: #141231;
   color: #ffffff;
@@ -133,6 +61,8 @@ body {
   flex: 1;
   padding: 20px;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -160,6 +90,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 10px;
+  margin-bottom: 20px;
 }
 
 .note {
@@ -174,14 +105,16 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-form {
+.create-note-form {
   background-color: #2A2756;
   padding: 20px;
   border-radius: 5px;
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-form input, form textarea {
+.create-note-form input, .create-note-form textarea {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
@@ -191,16 +124,17 @@ form input, form textarea {
   color: #ffffff;
 }
 
-form input[type="submit"] {
+.create-note-form input[type="submit"] {
   background-color: #4E4AA8;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
 }
 
-form input[type="submit"]:hover {
+.create-note-form input[type="submit"]:hover {
   background-color: #6F6BCF;
   transform: scale(1.05);
 }
+
 .search-container {
   position: relative;
   display: inline-block;
@@ -217,4 +151,3 @@ form input[type="submit"]:hover {
   color: #C4C4C4;
   font-size: 16px;
 }
->>>>>>> 99da47de33d5220dcef6d6230247e50665b02d9d
