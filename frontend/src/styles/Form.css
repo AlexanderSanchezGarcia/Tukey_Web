@@ -1,0 +1,44 @@
+.form-container h2 {
+  font-size: 1.5rem;
+  color: #ff69b4;
+}
+
+.form-container h3 {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.form-container a {
+  color: #ff69b4;
+  text-decoration: none;
+}
+
+.form-input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.form-button {
+  padding: 0.7rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff69b4;
+  color: #fff;
+  cursor: pointer;
+}
+
+.social-login {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.social-login button {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
