@@ -20,7 +20,20 @@ body {
   justify-content: space-between;
 }
 
-.sidebar h2 {
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ff69b4;
+  margin-right: 10px;
+}
+
+.header-logo .logo-text {
   color: #ffffff;
   font-size: 1.2em;
   margin-bottom: 10px;
@@ -86,41 +99,28 @@ body {
   border: 1px solid #ccc;
 }
 
-.notes-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+.home-notes-grid {
+  display: flex;
+  flex-wrap: wrap;
   gap: 10px;
-  margin-bottom: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 5px;
   margin-bottom: 10px;
 }
 
-.note {
+.home-dashboard {
+  margin-bottom: 20px;
+}
+
+.home-create-note-form {
   background-color: #2A2756;
   padding: 10px;
   border-radius: 5px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.note:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.create-note-form {
-  background-color: #2A2756;
-  padding: 10px;
-  border-radius: 5px;
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
   margin-top: 10px;
   display: flex;
   flex-direction: column;
 }
 
-.create-note-form input, .create-note-form textarea {
+.home-create-note-form input,
+.home-create-note-form textarea {
   width: 100%;
   padding: 5px;
   margin: 5px 0;
@@ -130,13 +130,13 @@ body {
   color: #ffffff;
 }
 
-.create-note-form input[type="submit"] {
+.home-create-note-form input[type="submit"] {
   background-color: #4E4AA8;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
 }
 
-.create-note-form input[type="submit"]:hover {
+.home-create-note-form input[type="submit"]:hover {
   background-color: #6F6BCF;
   transform: scale(1.05);
 }

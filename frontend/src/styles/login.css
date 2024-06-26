@@ -11,7 +11,7 @@ body {
     overflow: hidden;
 }
 
-.content {
+.login-content {
     display: flex;
     flex: 1;
     align-items: center;
@@ -20,7 +20,7 @@ body {
     z-index: 1;
 }
 
-.image-placeholder {
+.login-image-placeholder {
     position: absolute;
     top: 0;
     left: 0;
@@ -29,7 +29,7 @@ body {
     overflow: hidden;
 }
 
-.background-image {
+.login-background-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -46,11 +46,11 @@ body {
     text-align: center;
 }
 
-.form-wrapper {
+.login-form-wrapper {
     width: 100%;
 }
 
-.form-input {
+.login-form-input {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -59,7 +59,7 @@ body {
     font-size: 16px;
 }
 
-.form-button {
+.login-form-button {
     width: 100%;
     padding: 10px;
     background-color: #ff69b4;
@@ -70,7 +70,7 @@ body {
     cursor: pointer;
 }
 
-.corner-image {
+.login-corner-image {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -79,7 +79,7 @@ body {
     z-index: 2;
 }
 
-.header {
+.login-header {
     position: absolute;
     top: 20px;
     left: 20px;
@@ -88,7 +88,7 @@ body {
     align-items: center;
 }
 
-.circle {
+.login-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -96,17 +96,17 @@ body {
     margin-right: 10px;
 }
 
-.logo-text {
+.login-logo-text {
     color: white;
     font-size: 24px;
     font-weight: bold;
 }
 
-.no-underline {
+.login-no-underline {
     text-decoration: none;
     color: #ff69b4;
 }
 
-.no-underline:hover {
+.login-no-underline:hover {
     text-decoration: underline;
 }

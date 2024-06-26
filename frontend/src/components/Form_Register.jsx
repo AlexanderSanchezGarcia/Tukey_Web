@@ -40,7 +40,7 @@ function Form({ route, method }) {
                 style={{
                     position: 'absolute',
                     top: 0,
-                    left: 100,
+                    left: 0,
                     width: '100%',
                     height: '100%',
                     objectFit: 'cover',
@@ -51,7 +51,7 @@ function Form({ route, method }) {
             <div className="form-container" style={{ position: 'relative', zIndex: 1, marginLeft: '50px' }}>
                 <h2>START FOR FREE</h2>
                 <h3>{name === "login" ? "Log In" : "Create new account"}</h3>
-                <p>Already a Member? <a href="/login">Log In</a></p>
+                <p>Ya eres miembro? <a href="/login">Log In</a></p>
                 <form onSubmit={handleSubmit}>
                     <input
                         className="form-input"

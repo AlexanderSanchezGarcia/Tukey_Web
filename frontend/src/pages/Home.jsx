@@ -80,7 +80,10 @@ function Home() {
         <div className="container">
             <div className="sidebar">
                 <nav>
-                    <h2>TUKEY</h2>
+                    <div className="header-logo">
+                        <div className="circle"></div>
+                        <h2 className="logo-text">TUKEY</h2>
+                    </div>
                     <ul className="nav-list">
                         <li className="nav-item">
                             <a href="https://www.instagram.com/weare_tukey?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
@@ -89,9 +92,7 @@ function Home() {
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a href="/logout">
-                                Logout
-                            </a>
+                            <a href="/logout">Logout</a>
                         </li>
                     </ul>
                 </nav>
@@ -106,26 +107,26 @@ function Home() {
                     {user && <h3>Bienvenido, {user.username}!</h3>}
                 </div>
                 {showDashboard ? (
-                    <div className="dashboard">
+                    <div className="home-dashboard">
                         <h2>All Notes</h2>
-                        <div className="notes-grid">
+                        <div className="home-notes-grid">
                             {allNotes.map((note) => (
-                                <Note note={note} onDelete={deleteNote} key={note.id} showDashboard={showDashboard} />
+                                <Note note={note} key={note.id} showDashboard={showDashboard} />
                             ))}
                         </div>
                     </div>
                 ) : (
                     <>
-                    <div className="dashboard">
-                        <h2>My Notes</h2>
-                    </div>    
-                        <div className="notes-grid">
+                        <div className="home-dashboard">
+                            <h2>My Notes</h2>
+                        </div>
+                        <div className="home-notes-grid">
                             {notes.map((note) => (
                                 <Note note={note} onDelete={deleteNote} key={note.id} showDashboard={showDashboard} />
                             ))}
                         </div>
                         <h2>Create a Note</h2>
-                        <form onSubmit={createNote} className="create-note-form">
+                        <form onSubmit={createNote} className="home-create-note-form">
                             <label htmlFor="title">Title:</label>
                             <input
                                 type="text"

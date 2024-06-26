@@ -5,16 +5,16 @@ import '../styles/login.css';
 function Login() {
     return (
         <div className="login-page">
-            <div className="content">
-                <div className="image-placeholder">
+            <div className="login-content">
+                <div className="login-image-placeholder">
                     <img
                         src="src/assets/background.jpg"
                         alt="background"
-                        className="background-image"
+                        className="login-background-image"
                     />
                 </div>
                 <div className="login-form-container" style={{ marginRight: '100px', marginLeft: 'auto' }}>
-                    <div className="form-wrapper">
+                    <div className="login-form-wrapper">
                         <Form route="/api/token/" method="login" />
                     </div>
                 </div>
@@ -22,11 +22,11 @@ function Login() {
             <img
                 src="src/assets/tukey.png"
                 alt="new-image"
-                className="corner-image"
+                className="login-corner-image"
             />
-            <div className="header">
-                <div className="circle"></div>
-                <span className="logo-text">TUKEY</span>
+            <div className="login-header">
+                <div className="login-circle"></div>
+                <span className="login-logo-text">TUKEY</span>
             </div>
         </div>
     );

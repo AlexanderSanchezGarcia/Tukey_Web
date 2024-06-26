@@ -1,5 +1,5 @@
-import react from 'react'
-import '../styles/Note.css'
+import React from 'react';
+import '../styles/Note.css';
 
 function Note({ note, onDelete, showDashboard }) {
     const formatedDate = new Date(note.created_at).toLocaleDateString('en-US');
@@ -16,4 +16,4 @@ function Note({ note, onDelete, showDashboard }) {
     );
 }
 
-export default Note
+export default Note;
