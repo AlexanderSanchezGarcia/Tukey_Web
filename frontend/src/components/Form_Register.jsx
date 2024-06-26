@@ -35,7 +35,7 @@ function Form({ route, method }) {
     return (
         <div className="form-page" style={{ position: 'relative', width: '100%', height: '100vh' }}>
             <img
-                src="/src/assets/background.jpg"
+                src="src/assets/background.jpg"
                 alt="background"
                 style={{
                     position: 'absolute',
@@ -72,21 +72,7 @@ function Form({ route, method }) {
                         {name === "login" ? "Log In" : "Sign In"}
                     </button>
                 </form>
-                <div className="social-login">
-                    <p>Or {name === "login" ? "Log In" : "Sign in"} with</p>
-                    <button className="social-button google-btn">
-                        <img src="src/assets/google.png" alt="Google" style={{ width: '20px', marginRight: '10px' }} />
-                        Google
-                    </button>
-                    <button className="social-button apple-btn">
-                        <img src="src/assets/apple.png" alt="Apple ID" style={{ width: '20px', marginRight: '10px' }} />
-                        Apple ID
-                    </button>
-                    <button className="social-button facebook-btn">
-                        <img src="src/assets/facebook.png" alt="Facebook" style={{ width: '20px', marginRight: '10px' }} />
-                        Facebook
-                    </button>
-                </div>
+              
             </div>
             <img
                 src="src/assets/tukey.png"
@@ -96,7 +82,7 @@ function Form({ route, method }) {
                     bottom: 0,
                     right: 0,
                     width: '150px',
-                    height: '150px',
+                    height: '150px', 
                     zIndex: 1,
                 }}
             />
