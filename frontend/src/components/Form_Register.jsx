@@ -35,7 +35,7 @@ function Form({ route, method }) {
     return (
         <div className="form-page" style={{ position: 'relative', width: '100%', height: '100vh' }}>
             <img
-                src="src/assets/background.jpg"
+                src="/src/assets/background.jpg"
                 alt="background"
                 style={{
                     position: 'absolute',
@@ -89,14 +89,14 @@ function Form({ route, method }) {
                 </div>
             </div>
             <img
-                src="src/assets/tukey.png" // Ruta a la nueva imagen
+                src="src/assets/tukey.png"
                 alt="new-image"
                 style={{
                     position: 'absolute',
                     bottom: 0,
                     right: 0,
-                    width: '150px', // Ajusta el tamaño según sea necesario
-                    height: '150px', // Ajusta el tamaño según sea necesario
+                    width: '150px',
+                    height: '150px',
                     zIndex: 1,
                 }}
             />
