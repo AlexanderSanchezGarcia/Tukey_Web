@@ -5,24 +5,31 @@ import '../styles/login.css';
 function Login() {
     return (
         <div className="login-page">
-            <nav className="navbar">
-                <div className="logo">TUKEY</div>
-                <ul className="nav-links">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/join">Join</a></li>
-                </ul>
-            </nav>
             <div className="content">
                 <div className="image-placeholder">
-                    {}
+                    <img
+                        src="src/assets/background.jpg"
+                        alt="background"
+                        className="background-image"
+                    />
                 </div>
-                <div className="login-form">
-                    <Form route="/api/token/" method="login" />
+                <div className="login-form-container" style={{ marginRight: '100px', marginLeft: 'auto' }}>
+                    <div className="form-wrapper">
+                        <Form route="/api/token/" method="login" />
+                    </div>
                 </div>
+            </div>
+            <img
+                src="src/assets/tukey.png"
+                alt="new-image"
+                className="corner-image"
+            />
+            <div className="header">
+                <div className="circle"></div>
+                <span className="logo-text">TUKEY</span>
             </div>
         </div>
     );
 }
 
 export default Login;
-
