@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import api from "../api";
 import Note from "../components/Note";
 import "../styles/Home.css";
+import "../App.jsx";
 
 function Home() {
     const [notes, setNotes] = useState([]);
@@ -82,33 +83,14 @@ function Home() {
                     <h2>TUKEY</h2>
                     <ul className="nav-list">
                         <li className="nav-item">
-                            <a href="#">Blog</a>
-                        </li>
-                        <li className="nav-item">
-                            <a href="#">
-                                <img src="/src/assets/icons/post.png" alt="Projects" />
-                                Projects
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a href="#">
-                                <img src="/src/assets/icons/newspaper.png" alt="News" />
-                                News
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a href="#">Browse New Channels</a>
-                        </li>
-                        <li className="nav-item">
-                            <a href="#">
+                            <a href="https://www.instagram.com/weare_tukey?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
                                 <img src="/src/assets/icons/social-network-1.png" alt="Social Media" />
                                 Social Media
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a href="#">
-                                <img src="/src/assets/icons/share.png" alt="Share" />
-                                Share profile
+                            <a href="/logout">
+                                Logout
                             </a>
                         </li>
                     </ul>
@@ -121,17 +103,14 @@ function Home() {
             <div className="content">
                 <div className="header">
                     <h2>Notes</h2>
-                    <div className="search-container">
-                        <input type="text" className="search-input" placeholder="Search" />
-                    </div>
-                    {user && <h3>Welcome, {user.username}!</h3>}
+                    {user && <h3>Bienvenido, {user.username}!</h3>}
                 </div>
                 {showDashboard ? (
                     <div className="dashboard">
                         <h2>All Notes</h2>
                         <div className="notes-grid">
                             {allNotes.map((note) => (
-                                <Note note={note} onDelete={deleteNote} key={note.id} />
+                                <Note note={note} onDelete={deleteNote} key={note.id} showDashboard={showDashboard} />
                             ))}
                         </div>
                     </div>
@@ -142,7 +121,7 @@ function Home() {
                     </div>    
                         <div className="notes-grid">
                             {notes.map((note) => (
-                                <Note note={note} onDelete={deleteNote} key={note.id} />
+                                <Note note={note} onDelete={deleteNote} key={note.id} showDashboard={showDashboard} />
                             ))}
                         </div>
                         <h2>Create a Note</h2>
@@ -174,4 +153,3 @@ function Home() {
 }
 
 export default Home;
-
